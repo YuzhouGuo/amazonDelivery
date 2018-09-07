@@ -4,6 +4,6 @@
 
  * All files except "Tester.java" are source code.
  * The "Tester.java" file is here to check if algorithms here make sense: Creating boxes with different prorities and sizes, put them into the warehourse to see if all boxes are at where they are supposed to be.
- * A nice practice of mergeSort.
+ * A nice practice of *mergeSort*.
 
 The pdf file "A2" gives a instruction of this assignment from algorithm course.
