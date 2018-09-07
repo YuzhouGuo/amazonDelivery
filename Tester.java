@@ -17,7 +17,7 @@ public class Tester {
 			System.out.println("Merge Sort does not work");
 		}
 		
-		/*Box b1 = new Box(2, 4, "Box 1");
+		Box b1 = new Box(2, 4, "Box 1");
 		Box b2 = new Box(4, 10, "Box 2");
 		Box b3 = new Box(2, 10, "Box 3");
 		Box b4 = new UrgentBox(2, 10, "Box 4");
@@ -96,13 +96,13 @@ public class Tester {
 		
 		//TESTING REORGANIZE
 		
-		/*
-		 * Box b1 = new Box(2, 4, "Box 1");
+		
+		Box b1 = new Box(2, 4, "Box 1");
 		Box b2 = new Box(4, 10, "Box 2");
 		Box b3 = new Box(2, 10, "Box 3");
 		Box b4 = new UrgentBox(2, 10, "Box 4");
-		 */
-		/*warehouse.storage[4].addBox(b1);
+		
+		warehouse.storage[4].addBox(b1);
 		warehouse.storage[2].addBox(b2);
 		warehouse.storage[3].addBox(b3);
 		warehouse.storage[1].addBox(b4);
@@ -121,7 +121,7 @@ public class Tester {
 		}
 		else{
 			System.out.println("Reorganizing the warehouse does not work");
-		}*/
+		}
 	}
 
 }
