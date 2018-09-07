@@ -67,11 +67,8 @@ public class Warehouse{
  
  /**
   * performs the induction step of the merge sort algorithm
-  * @param start
-  * @param end
   */
  protected void mergeSort(int start, int end){
-  //ADD YOUR CODE HERE
 		if(start<end)
 		{
 			int mid = (start+end)/2;
@@ -82,12 +79,8 @@ public class Warehouse{
  }
  /**
   * performs the merge part of the merge sort algorithm
-  * @param start
-  * @param mid
-  * @param end
   */
  protected void merge(int start, int mid, int end){
-  //ADD YOUR CODE HERE
 	    int n1 = mid -start+1;
 	    int n2 = end-mid;
 		
@@ -139,11 +132,8 @@ public class Warehouse{
  /**
   * Adds a box is the smallest possible shelf where there is room available.
   * Here we assume that there is at least one shelf (i.e. nbShelves >0)
-  * @param b
-  * @return problem or noProblem
   */
  public String addBox (Box b){
-  //ADD YOUR CODE HERE
 	 for (int i=0; i<nbShelves; i++)
 	 {
 		 if (storage[i].height>=b.height)  //since the shelves are already sorted, this is the optimal height
@@ -160,11 +150,8 @@ public class Warehouse{
  
  /**
   * Adds a box to its corresponding shipping list and updates all the fields
-  * @param b
-  * @return problem or noProblem
   */
  public String addToShip (Box b){
-  //ADD YOUR CODE HERE
 	 try {
 		if(b instanceof UrgentBox)
 		 {
@@ -210,11 +197,8 @@ public class Warehouse{
   * Find a box with the identifier (if it exists)
   * Remove the box from its corresponding shelf
   * Add it to its corresponding shipping list
-  * @param identifier
-  * @return problem or noProblem
   */
  public String shipBox (String identifier){
-  //ADD YOUR CODE HERE
 	 for(int i=0; i<nbShelves; i++)
 	 {
 		 boolean b = (storage[i].availableLength == storage[i].totalLength);
@@ -240,11 +224,8 @@ public class Warehouse{
  /**
   * if there is a better shelf for the box, moves the box to the optimal shelf.
   * If there are none, do not do anything
-  * @param b
-  * @param position
   */
  public void moveOneBox (Box b, int position){
-  //ADD YOUR CODE HERE
 	 int h = storage[position].height;
 	 for(int i=0; i<nbShelves; i++)
 	 {
@@ -265,7 +246,6 @@ public class Warehouse{
   * reorganize the entire warehouse : start with smaller shelves and first box on each shelf.
   */
  public void reorganize (){
-  //ADD YOUR CODE HERE
 	 for(int i=0; i<nbShelves; i++)
 	 {
 		 Box n = storage[i].firstBox;
