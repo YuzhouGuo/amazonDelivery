@@ -35,7 +35,6 @@ public class Shelf {
 	
 	/**
 	 * Adds a box on the shelf. Here we assume that the box fits in height and length on the shelf.
-	 * @param b
 	 */
 	public void addBox(Box b){
 		//ADD YOUR CODE HERE
@@ -64,8 +63,6 @@ public class Shelf {
 	/**
 	 * If the box with the identifier is on the shelf, remove the box from the shelf and return that box.
 	 * If not, do not do anything to the Shelf and return null.
-	 * @param identifier
-	 * @return
 	 */
 	public Box removeBox(String identifier){
 		//ADD YOUR CODE HERE
